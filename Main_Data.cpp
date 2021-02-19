@@ -3,11 +3,11 @@
 int main(int argc,char* argv[]){
 string filepath=argv[1];
 int no_lines=atoi(argv[2]);
-FASTAread fr(filepath);
+Main_Data fr(filepath);
 char X;
 cout << "SELECT AN OPERATION" << endl;
-cout << "A. Initialize (fill up) the array data-structure with the 1 million reads." << endl;
-cout << "B. Initialize (fill up) the array data-structure with the entire 36 million reads." << endl;
+cout << "A. Initialize fetching data the array data-structure with the 1 million reads." << endl;
+cout << "B. Initialize fetching data the array data-structure with the entire 36 million reads." << endl;
 cout << "C. Compute Statistics(Unique seq frag, No of Reads, Char count of A,C,G,T)" << endl;
 cout << "D. Deallocate the array" << endl;
 cout << "E. Sort 36 Million data " << endl;

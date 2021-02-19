@@ -8,17 +8,17 @@
 #include <string.h>
 using namespace std;
 
-class FASTAread{
+class Main_Data{
 public:
 char** head;
 char** dataseq;
 int noflines;
 string filepath;
 ifstream input;
-FASTAread(){
+Main_Data(){
         cout<< "constructor called"<< endl;
         }
-FASTAread(string fp){
+Main_Data(string fp){
 filepath=fp;
 input.open(filepath.c_str());
 }
@@ -47,6 +47,7 @@ int strcmps(char *p, char*q){
  continue;
         }
 }
+return 1;
 }
 
 void merge_sort(char *arr[], int a, int b, int c)
@@ -210,7 +211,7 @@ void unique_sequence_count(){
 void delete_my_array(){
 cout << "Array deleted sucessfully" << endl;
 }
-~FASTAread(){
+~Main_Data(){
 delete[] head;
 delete[] dataseq;
 delete_my_array();

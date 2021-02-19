@@ -184,7 +184,7 @@ for(int k = 0; k < 28;k++){
 }
 for(int t = 0 ; t < 14; t++)
 {
-cout <<"Dataset" <<  t+1 << "is:" << outarr[t] << endl;
+cout <<" = > Data_Set " <<  t+1 << "is : " << outarr[t] << endl;
 }
 }
 
